@@ -44,7 +44,7 @@ function Skills() {
           <Skill title={'React'} style={react} description={'beautiful description about me perfect skills in programming'}/>
           <Skill title={'Redux'} style={redux} description={'beautiful description about me perfect skills in programming'}/>
           <Skill title={'Redux Toolkit'} style={toolkit} description={'beautiful description about me perfect skills in programming'}/>
-          <Skill title={'Git'} style={git} description={'beautiful description about me perfect skills in programming'}/>
+          <Skill title={'GitHub'} style={git} description={'beautiful description about me perfect skills in programming'}/>
         </div>
       </div>
     </div>

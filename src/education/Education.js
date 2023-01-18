@@ -8,7 +8,7 @@ function Education() {
     <div className={style.educationBlock}>
       <div className={style.educationContainer}>
         <Title title={'Education'} />
-        <div className={style.elucationItems}>
+        <div className={style.educationItems}>
           <div className={style.item}>
             <span className={style.university}>Belarussian State Economic University (2005-2010)</span>
             <span className={style.specialization}>Financial management</span>

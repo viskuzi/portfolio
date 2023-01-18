@@ -5,19 +5,21 @@
   background-size: cover;
   min-height: 60vh;
   position: relative;
+  padding-bottom: 100px;
   .educationContainer {
     @include container();
     @include flex(column, flex-start, center, nowrap);
     height: 400px;
-    .elucationItems {
+    .educationItems {
       width: 100%;
       @include flex(row, center, normal, nowrap);
       .item{
+        & * {
+          border: ridge 3px;
+          border-radius: 20px;
+        }
         @include flex(column, space-between, normal, nowrap);
-        border: 3px ridge;
         .university {
-          border: ridge 2px;
-          border-collapse: collapse;
           padding: 10px;
           font-size: 20px;
           color: #262626;
@@ -27,8 +29,6 @@
           flex-grow: 6;
         }
         .specialization {
-          border: ridge 2px;
-          border-collapse: collapse;
           padding: 10px;
           font-size: 17px;
           color: #262626;
