@@ -1,6 +1,5 @@
 import React from "react";
 import style from './Title.module.scss';
-import styleContainer from '../../../common/styles/Container.module.css'
 
 function Title(props) {
   return (
