@@ -1,0 +1,23 @@
+@import '../../styles/sass/mixins.scss';
+@import '../../styles/sass/variables.scss';
+
+.title {
+  margin: 70px 0;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: $primaryColor;
+    width: 150px;
+    height: 2px;
+    bottom: -30px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
+  .greenHeader {
+    @include greenHeader();
+  }
+  .cursiveHeader {
+    @include cursiveHeader();
+  }
+}

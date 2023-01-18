@@ -1,0 +1,16 @@
+import React from "react";
+import style from './Header.module.scss'
+import Nav from "../nav/Nav";
+
+function Header() {
+  return (
+    <div className={style.header}>
+      <div href="/" className={style.emailBut}>
+				<span>kanstantsin.lushchyk@gmail.com</span>
+			</div>
+      <Nav />
+    </div>
+  );
+}
+
+export default Header;

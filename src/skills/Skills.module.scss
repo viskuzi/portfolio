@@ -1,0 +1,37 @@
+@import '../common/styles/sass/mixins.scss';
+
+.skillsBlock {
+  min-height: 50vh;
+  position: relative;
+  &::before {
+    content: "Skills";
+    position: absolute;
+    width: 100%;
+    font-size: calc(50px + 30vw);
+    text-align: center;
+    color: #ebb258;
+    font-weight: 700;
+    opacity: 0.05;
+    font-family: 'Caveat';
+    top: -100px;
+    left: 40%;
+    transform: translate(-50%, 50%);
+  }
+  .skillsContainer {
+    @include container();
+    @include flex(column, flex-start, center, nowrap);
+    .skills {
+      @include flex(row, center, normal, wrap);
+      font-family: "Jost",sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.7; 
+      width: 80%;
+    }
+  }
+}
+
+
+
+
+

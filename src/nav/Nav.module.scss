@@ -1,0 +1,30 @@
+@import '../common/styles/sass/mixins.scss';
+@import '../common/styles/sass/variables.scss';
+.nav {
+  @include flex(row, space-around, center, nowrap);
+  width: 40%;
+  min-width: 340px;
+  height: 40px;
+  .navItem {
+    @include buttonBeforeChanging(relative, 19px, 40px, 86px);
+    min-width: 86px;
+    background-color: $bgColor;
+    @include flex(row, center, center, nowrap);
+    &::before {
+      @include pseudoElBeforeChanging(41px, 0px, 17px, 19px);
+    }
+    &:hover {
+      @include buttonHover();
+      &::before {
+        @include buttonChanged(87px, -27px);
+      }
+    }
+  }
+}
+
+
+
+
+
+
+

@@ -1,0 +1,101 @@
+@import '../common/styles/sass/mixins.scss';
+@import '../common/styles/sass/variables.scss';
+
+.mainBlock {
+  min-height: 100vh;
+  @include flex(row, flex-start, center, nowrap);
+  background-image: url("../assets/images/mainBg.jpg");
+  background-size: cover;
+  position: relative;
+  margin-top: 60px;
+  z-index: 6;
+  &::after {
+    content: "Web Developer";
+    position: absolute;
+    width: 100%;
+    font-size: calc(50px + 15vw);
+    text-align: center;
+    color: #ebb258;
+    font-weight: 700;
+    opacity: 0.12;
+    font-family: 'Caveat';
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
+  .downloadBut {
+    @include flex(row, center, center, nowrap);
+    @include buttonBeforeChanging(absolute, 19px, 40px, 131px);
+    top: 3%;
+    left: 50px;
+    padding: 5px;
+    &::before {
+      @include pseudoElBeforeChanging(41px, 0px, 18px, 41px);
+    }
+    &:hover {
+      @include buttonHover();
+      &::before {
+        @include buttonChanged(128px, -48px);
+      }
+    }
+  }
+  .container {
+    @include container();
+    .mainItems {
+      height: 100%;
+      width: 100%;
+      @include flex(row, space-evenly, center, wrap);
+      .text {
+        width: fit-content;
+        text-align: center;
+        @include flex(column, center, center, nowrap);
+        .name {
+          line-height: 1.2;
+          color: $primaryColor;
+          font-weight: 700;
+          margin: 15px 0 0 0;
+          text-transform: uppercase;
+          letter-spacing: 3.2px;
+          font-size:calc(27px + 2.5vw);
+          text-shadow: 2px 2px #000, -2px 2px #000, 2px -2px #000, -2px -2px #000, 5px 5px rgba(0, 0, 0, 0.2);
+        }       
+        .surname {
+          line-height: 1.2;
+          color: #ffffff;
+          font-weight: 700;
+          margin: 15px 0 0 0;
+          text-transform: uppercase;
+          letter-spacing: 3.2px;
+          font-size:calc(27px + 2.5vw);
+          text-shadow: 2px 2px #000, -2px 2px #000, 2px -2px #000, -2px -2px #000, 5px 5px rgba(0, 0, 0, 0.2);
+        }
+        .cursiveHeader {
+          @include cursiveHeader();
+        }
+      }
+      .foto {
+        min-width: 340px;
+        width: 35vw;
+        min-height: 340px;
+        height: 35vw;
+        border-radius: 50%;
+        background-color: $primaryColor;
+        position: relative;
+        z-index: 5;
+        margin-bottom: 155px;
+        &::before {
+          position: absolute;
+          min-width: 100%;
+          min-height: 100%;
+          border-radius: 50%;
+          content: "";
+          background-image: url('../assets/images/ava6.png');
+          background-size: cover;
+          background-position: center;
+        }
+      }
+    }
+  }
+}
+
+
+

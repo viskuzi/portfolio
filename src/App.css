@@ -1,0 +1,11 @@
+.App {
+  background-color: #f0ebe3
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.font-face-gm {
+  font-family: "Caveat";
+}

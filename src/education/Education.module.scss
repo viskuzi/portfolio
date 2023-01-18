@@ -1,0 +1,52 @@
+@import '../common/styles/sass/mixins.scss';
+
+.educationBlock {
+  background-image: url("../assets/images/mainBg.jpg");
+  background-size: cover;
+  min-height: 60vh;
+  position: relative;
+  .educationContainer {
+    @include container();
+    @include flex(column, flex-start, center, nowrap);
+    height: 400px;
+    .elucationItems {
+      width: 100%;
+      @include flex(row, center, normal, nowrap);
+      .item{
+        @include flex(column, space-between, normal, nowrap);
+        border: 3px ridge;
+        .university {
+          border: ridge 2px;
+          border-collapse: collapse;
+          padding: 10px;
+          font-size: 20px;
+          color: #262626;
+          font-family: "Jost",sans-serif;
+          font-weight: 600;
+          line-height: 1.7;
+          flex-grow: 6;
+        }
+        .specialization {
+          border: ridge 2px;
+          border-collapse: collapse;
+          padding: 10px;
+          font-size: 17px;
+          color: #262626;
+          font-family: "Jost",sans-serif;
+          font-weight: 400;
+          line-height: 1.7;
+          flex-grow: 4;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+

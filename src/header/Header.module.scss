@@ -1,0 +1,47 @@
+@import '../common/styles/sass/mixins.scss';
+@import '../common/styles/sass/variables.scss';
+
+.header {
+  @include flex(row, space-around, center, nowrap);
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background-color: #262626;
+  background: linear-gradient(45deg, #262626,	$bgColor, #262626);
+  opacity: 0.9;
+  .emailBut {
+    position: absolute;
+    height: 40px;
+    top: 18px;
+    right: 30px;
+    color: $bgColor;
+    font-family: "Jost", sans-serif;
+    font-size: 15px;
+    text-decoration: underline;
+    padding: 5px;
+    cursor: default;
+    transition-duration: 1.2s;
+    @media screen and (max-width: 1000px) {
+      display: none;
+    }
+    &::before {
+      position: absolute;
+      width: 28px;
+      height: 18px;
+      content: "";
+      background-image: url('../assets/images/email.jpg');
+      background-size: cover;
+      top: 10;
+      left: -30px;
+      z-index: 200;
+    }
+  }
+}
+
+
+
+
+
