@@ -1,5 +1,7 @@
 import React from "react";
 import style from './Main.module.scss';
+import { Flip } from "react-reveal";
+import Pulse from 'react-reveal/Pulse';
 
 function Main() {
   return (
@@ -9,12 +11,14 @@ function Main() {
 			</a>
       <div className={style.container}>
         <div className={style.mainItems}>
+        <Flip right cascade>
           <div className={style.text}>
             <div className={style.name}>Kanstantsin</div>
             <div className={style.surname}> Lushchyk</div>
-            <span className={style.cursiveHeader}>Web developer</span>
+            <span className={style.cursiveHeader}>Web Developer</span>
           </div>
-          <div className={style.foto}></div>
+        </Flip>
+        <Pulse><div className={style.foto} /></Pulse>
         </div>        
       </div>
     </div>  

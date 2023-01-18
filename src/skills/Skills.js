@@ -9,6 +9,7 @@ import reactImg from '../assets/images/react.png';
 import reduxImg from '../assets/images/redux.png';
 import toolkitImg from '../assets/images/toolkit.png';
 import gitImg from '../assets/images/git.png';
+import { Slide } from "react-reveal";
 
 function Skills() {
   const js = {
@@ -37,6 +38,7 @@ function Skills() {
     <div className={style.skillsBlock}>
       <div className={style.skillsContainer}>
         <Title title={'Skills'}/>
+        <Slide top cascade>
         <div className={style.skills}>
           <Skill title={'JS'} style={js} description={'beautiful description about me perfect skills in programming'}/>
           <Skill title={'CSS3'} style={css} description={'beautiful description about me perfect skills in programming'}/>
@@ -46,6 +48,7 @@ function Skills() {
           <Skill title={'Redux Toolkit'} style={toolkit} description={'beautiful description about me perfect skills in programming'}/>
           <Skill title={'GitHub'} style={git} description={'beautiful description about me perfect skills in programming'}/>
         </div>
+        </Slide>
       </div>
     </div>
   );

@@ -109,7 +109,7 @@ const particlesLoaded = useCallback(async container => {
                   }
                 },
                 size: {
-                  value: 3
+                  value: 2
                 },
                 links: {
                   enable: false,

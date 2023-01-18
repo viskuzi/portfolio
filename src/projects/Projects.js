@@ -5,6 +5,7 @@ import Title from "../common/components/title/Title";
 import brainImage from '../assets/images/Quaran-brain.png';
 import diffCalcImg from '../assets/images/difCalc.png';
 import chatImg from '../assets/images/chat.jpg';
+import { Slide } from "react-reveal";
 
 function Projects() {
   const brainGames = {
@@ -23,6 +24,7 @@ function Projects() {
     <div className={style.projectsBlock}>
       <div className={style.projectsContainer}>
       <Title title={'Projects'}/>
+      <Slide top cascade>
         <div className={style.itemsBlock}>
           <Project 
             title={'Brain Games'} 
@@ -43,6 +45,7 @@ function Projects() {
             link={"https://github.com/viskuzi/js-react-developer-project-12"}
           />
         </div>
+        </Slide>
       </div>
     </div>
   );

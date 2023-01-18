@@ -3,6 +3,7 @@ import style from './Footer.module.scss';
 import instaImg from '../assets/images/insta.jpeg';
 import linkedinImg from '../assets/images/linkedin.jpg';
 import gitImg from '../assets/images/git.png';
+import { Fade } from 'react-reveal';
 
 function Footer() {
   const footerContainer = [
@@ -16,16 +17,18 @@ function Footer() {
   };
 
   return (
-    <div className={style.containerBlock}>
-      <div className={style.linksBlock}>
-        {footerContainer.map((f, i) =>
-          <div key={i} className={style.logo} onClick={() => logoHandler(f.link)}>
-            <img alt="" src={f.logo} className={style.imgLogo} />
-          </div>
-        )}
+    <Fade top>
+      <div className={style.containerBlock}>
+        <div className={style.linksBlock}>
+          {footerContainer.map((f, i) =>
+            <div key={i} className={style.logo} onClick={() => logoHandler(f.link)}>
+              <img alt="" src={f.logo} className={style.imgLogo} />
+            </div>
+          )}
+        </div>
+        <span className={style.littleBlackText}>© 2023 All Rights Reserved.</span>
       </div>
-      <span className={style.littleBlackText}>© 2023 All Rights Reserved.</span>
-    </div>
+    </Fade>
   );
 }
 
