@@ -9,6 +9,14 @@ import Footer from './footer/Footer';
 import { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
+import k1 from './assets/images/kosmonavt.png';
+import k2 from './assets/images/kosmonavt2.png';
+import k3 from './assets/images/kosmonavt3.png';
+import k4 from './assets/images/kosmonavt4.png';
+import k5 from './assets/images/kosmonavt5.png';
+import k6 from './assets/images/kosmonavt6.png';
+import k7 from './assets/images/kosmonavt7.png';
+import k8 from './assets/images/kosmonavt8.png';
 
 
 function App() {
@@ -17,7 +25,7 @@ function App() {
     // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
     // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
     // starting from v2 you can add only the features you need reducing the bundle size
-    await loadFull(engine, { preset: "fire" });
+    await loadFull(engine);
 }, []);
 
 const particlesLoaded = useCallback(async container => {
@@ -91,7 +99,7 @@ const particlesLoaded = useCallback(async container => {
                   type: "circle"
                 },
                 opacity: {
-                  value: 1,
+                  value: 0.8,
                   random: false,
                   animation: {
                     enable: false,
@@ -199,42 +207,42 @@ const particlesLoaded = useCallback(async container => {
                     options: {
                       images: [
                         {
-                          src: "https://particles.js.org/images/amongus_blue.png",
+                          src: `${k1}`,
                           width: 205,
                           height: 267
                         },
                         {
-                          src: "https://particles.js.org/images/amongus_cyan.png",
+                          src: `${k2}`,
                           width: 207,
                           height: 265
                         },
                         {
-                          src: "https://particles.js.org/images/amongus_green.png",
+                          src: `${k3}`,
                           width: 204,
                           height: 266
                         },
                         {
-                          src: "https://particles.js.org/images/amongus_lime.png",
+                          src: `${k4}`,
                           width: 206,
                           height: 267
                         },
                         {
-                          src: "https://particles.js.org/images/amongus_orange.png",
+                          src: `${k5}`,
                           width: 205,
                           height: 265
                         },
                         {
-                          src: "https://particles.js.org/images/amongus_pink.png",
+                          src: `${k6}`,
                           width: 205,
                           height: 265
                         },
                         {
-                          src: "https://particles.js.org/images/amongus_red.png",
+                          src: `${k7}`,
                           width: 204,
                           height: 267
                         },
                         {
-                          src: "https://particles.js.org/images/amongus_white.png",
+                          src: `${k8}`,
                           width: 205,
                           height: 267
                         }
