@@ -8,15 +8,19 @@
   width: 100%;
   height: 130px;
   position: relative;
+
   // background-color: chocolate;
   .burgerNavItems {
     position: absolute;
     top: 10px;
-    display: none;
+    @include flex(column, space-between, center, nowrap);
+    transform: translate(150px, 0);
+    transition: 1s;
     .navItem {
       @include buttonBeforeChanging(relative, 19px, 30px, 86px);
       background-color: rgb(245, 243, 243);
       @include flex(row, center, center, nowrap);
+      margin: 1px 3px 2px 0;
       &::before {
         @include pseudoElBeforeChanging(27px, 2px, 12px, 27px);
       }
@@ -24,12 +28,13 @@
         @include buttonHover();
         &::before {
           @include buttonChanged(86px, -32px);
+          scale: 1;
         }
       }
     }
   }
   .show {
-    @include flex(column, space-between, center, nowrap);
+    transform: translate(0, 0);
   }
   .menuButton {
     position: absolute;
