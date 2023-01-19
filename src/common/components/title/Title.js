@@ -1,15 +1,15 @@
 import React from "react";
-import { Fade } from "react-reveal";
+import { Slide } from "react-awesome-reveal";
 import style from './Title.module.scss';
 
 function Title(props) {
   return (
-    <Fade left>
+    <Slide >
       <div className={style.title}>
         <span className={style.greenHeader}>my</span>
         <span className={style.cursiveHeader}>{props.title}</span>
       </div>
-    </Fade>
+    </Slide>
   );
 }
 

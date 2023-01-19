@@ -1,16 +1,14 @@
 import React from "react";
 import style from './Header.module.scss'
 import Nav from "../nav/Nav";
-import { Fade } from "react-reveal";
+import { Zoom } from "react-awesome-reveal";
 
 function Header() {
   return (
     <div className={style.header}>
-      <Fade right>
         <div href="/" className={style.emailBut}>
-			  	<span>kanstantsin.lushchyk@gmail.com</span>
+        <Zoom><span>kanstantsin.lushchyk@gmail.com</span></Zoom>
 			  </div>
-      </Fade>
       <Nav />
     </div>
   );

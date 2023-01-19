@@ -60,5 +60,9 @@
   }
   .middleBlackText {
     @include middleBlackText();
+    text-align: center;
+  }
+  .description {
+    text-align: justify;
   }
 }

@@ -1,7 +1,6 @@
 import React from "react";
 import style from './Main.module.scss';
-import { Flip } from "react-reveal";
-import Pulse from 'react-reveal/Pulse';
+import  { Zoom } from "react-awesome-reveal";
 
 function Main() {
   return (
@@ -11,14 +10,12 @@ function Main() {
 			</a>
       <div className={style.container}>
         <div className={style.mainItems}>
-        <Flip right cascade>
           <div className={style.text}>
-            <div className={style.name}>Kanstantsin</div>
-            <div className={style.surname}> Lushchyk</div>
-            <span className={style.cursiveHeader}>Web Developer</span>
+          <Zoom><div className={style.name}>Kanstantsin</div></Zoom>
+          <Zoom><div className={style.surname}> Lushchyk</div></Zoom>
+            <Zoom><span className={style.cursiveHeader}>Web Developer</span></Zoom>
           </div>
-        </Flip>
-        <Pulse><div className={style.foto} /></Pulse>
+        <Zoom><div className={style.foto} /></Zoom>
         </div>        
       </div>
     </div>  

@@ -8,7 +8,7 @@ function Project(props) {
         <a href={props.link} className={style.link}>See project</a>
       </div>
       <span className={style.middleBlackText}>{props.title}</span>
-      <span>{props.description}</span>
+      <span className={style.description}>{props.description}</span>
     </div>
   );
 }

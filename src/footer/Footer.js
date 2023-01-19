@@ -3,7 +3,7 @@ import style from './Footer.module.scss';
 import instaImg from '../assets/images/insta.jpeg';
 import linkedinImg from '../assets/images/linkedin.jpg';
 import gitImg from '../assets/images/git.png';
-import { Fade } from 'react-reveal';
+import { Fade } from "react-awesome-reveal";
 
 function Footer() {
   const footerContainer = [
