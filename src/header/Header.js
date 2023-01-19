@@ -6,7 +6,7 @@ import { Zoom } from "react-awesome-reveal";
 function Header() {
   return (
     <div className={style.header}>
-        <div href="/" className={style.emailBut}>
+        <div className={style.emailBut}>
         <Zoom><span>kanstantsin.lushchyk@gmail.com</span></Zoom>
 			  </div>
       <Nav />

@@ -12,8 +12,11 @@
     "react": "^18.2.0",
     "react-awesome-reveal": "^4.1.0",
     "react-dom": "^18.2.0",
+    "react-parallax-tilt": "^1.7.89",
     "react-scripts": "5.0.1",
+    "react-scroll": "^1.8.9",
     "react-tsparticles": "^2.7.1",
+    "react-typing-effect": "^2.0.5",
     "tsparticles": "^2.7.1",
     "tsparticles-slim": "^2.7.1",
     "web-vitals": "^2.1.4"
