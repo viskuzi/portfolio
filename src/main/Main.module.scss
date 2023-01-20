@@ -3,30 +3,41 @@
 
 .mainBlock {
   min-height: 100vh;
-  @include flex(row, flex-start, center, nowrap);
+  @include flex(column, flex-start, center, nowrap);
   background-image: url("../assets/images/mainBg.jpg");
   background-size: cover;
   position: relative;
   margin-top: 60px;
   z-index: 6;
+  animation: show 8s;
+  @keyframes show {
+    from {
+      opacity: 0.2;
+    }
+    to {
+      opacity: 1;
+    }
+  }
   &::after {
     content: "Web Developer";
     position: absolute;
-    width: 100%;
+    width: 90%;
     font-size: calc(50px + 15vw);
     text-align: center;
-    color: #ebb258;
+    color: #d8ad38;
     font-weight: 700;
     opacity: 0.12;
     font-family: 'Caveat';
-    left: 50%;
-    transform: translate(-50%, 50%);
+    left: 0;
+    top: 600px;
+    rotate: -10deg;
+    z-index: -1;
   }
   .downloadBut {
     @include flex(row, center, center, nowrap);
     @include buttonBeforeChanging(absolute, 19px, 40px, 131px);
-    top: 3%;
-    left: 50px;
+    top: 20px;
+    left: 20px;
     padding: 5px;
     text-decoration: none;
     &::before {
@@ -83,6 +94,15 @@
         position: relative;
         z-index: 5;
         margin-bottom: 155px;
+        animation: show 1.5s ease 4.2s backwards;
+        @keyframes show {
+          from {
+            opacity: 0
+          }
+          to {
+            opacity: 1
+          }
+        }
         &::before {
           position: absolute;
           min-width: 100%;
@@ -94,6 +114,17 @@
           background-position: center;
         }
       }
+    }
+  }
+  .aboutMe {
+    @include flex(column, center, center, nowrap);
+    width: 100%;
+    margin-bottom: 70px;
+    .myDescription {
+      width: 70%;
+      @include littleBlackText();
+      font-size: 20px;
+      text-align: justify;
     }
   }
 }

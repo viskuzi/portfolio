@@ -5,7 +5,7 @@ import Title from "../common/components/title/Title";
 import jsImg from '../assets/images/js.png';
 import cssImg from '../assets/images/css.png';
 import htmlImg from '../assets/images/html.png';
-import reactImg from '../assets/images/react.png';
+import reactImg from '../assets/images/react-1.svg';
 import reduxImg from '../assets/images/redux.png';
 import toolkitImg from '../assets/images/toolkit.png';
 import gitImg from '../assets/images/git.png';
