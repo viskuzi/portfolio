@@ -18,7 +18,7 @@ function Footer() {
 
   return (
     <Fade top>
-      <div className={style.containerBlock}>
+      <div className={style.footerBlock}>
         <div className={style.linksBlock}>
           {footerContainer.map((f, i) =>
             <div key={i} className={style.logo} onClick={() => logoHandler(f.link)}>

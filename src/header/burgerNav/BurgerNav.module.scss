@@ -12,17 +12,18 @@
   // background-color: chocolate;
   .burgerNavItems {
     position: absolute;
-    top: 10px;
+    top: 21px;
     @include flex(column, space-between, center, nowrap);
     transform: translate(150px, 0);
     transition: 1s;
     .navItem {
       @include buttonBeforeChanging(relative, 19px, 30px, 86px);
-      background-color: rgb(245, 243, 243);
+      background-color: rgb(255, 255, 255);
       @include flex(row, center, center, nowrap);
       margin: 1px 3px 2px 0;
+      opacity: 0.9;
       &::before {
-        @include pseudoElBeforeChanging(27px, 2px, 12px, 27px);
+        @include pseudoElBeforeChanging(27px, 0px, 12px, 27px);
       }
       &:hover {
         @include buttonHover();
@@ -38,14 +39,15 @@
   }
   .menuButton {
     position: absolute;
-    top: -32px;
+    top: -22px;
     right: 8px;
-    width: 40px;
-    height: 40px;
+    width: 38px;
+    height: 38px;
     background-image: url('../../assets/images/menuButton2.png');
     background-size: cover;
+    background-position: center;
     border-radius: 10px;
-    background-color: $bgColor;
+    opacity: 0.9;
   }
   @media screen and (min-width: 500px) {
     display: none;

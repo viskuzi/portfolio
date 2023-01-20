@@ -3,18 +3,23 @@
 .projectsBlock {
   min-height: 50vh;
   position: relative;
+  z-index: 1;
   &::after {
     content: "Portfolio";
     position: absolute;
+    width: 60%;
+    top: -200px;
+    left: 100px;
     font-size: calc(20vw);
     text-align: center;
     color: #ebb258;
     font-weight: 700;
     opacity: 0.08;
     font-family: 'Caveat';
-    top: -100px;
-    transform: translate(-50%, 50%);
-    transform: rotate(-15deg)
+    transform: rotate(-10deg);
+    @media screen and (max-width: 1099px) {
+      display: none;
+    }
   }
   .projectsContainer {
     @include container();

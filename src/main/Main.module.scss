@@ -28,6 +28,7 @@
     top: 3%;
     left: 50px;
     padding: 5px;
+    text-decoration: none;
     &::before {
       @include pseudoElBeforeChanging(41px, 0px, 18px, 41px);
     }
