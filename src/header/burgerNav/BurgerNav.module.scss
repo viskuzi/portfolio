@@ -3,16 +3,14 @@
 
 .burgerNav {
   @include flex(row, flex-end, center, nowrap);
-  top: 75px;
+  top: 60px;
   right: 0px;
-  width: 100%;
-  height: 130px;
-  position: relative;
-
-  // background-color: chocolate;
+  width: 40%;
+  height: 132px;
+  position: absolute;
   .burgerNavItems {
     position: absolute;
-    top: 21px;
+    top: 0px;
     @include flex(column, space-between, center, nowrap);
     transform: translate(150px, 0);
     transition: 1s;
@@ -39,7 +37,7 @@
   }
   .menuButton {
     position: absolute;
-    top: -22px;
+    top: -40px;
     right: 8px;
     width: 38px;
     height: 38px;
@@ -47,7 +45,6 @@
     background-size: cover;
     background-position: center;
     border-radius: 10px;
-    opacity: 0.9;
   }
   @media screen and (min-width: 500px) {
     display: none;
