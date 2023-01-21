@@ -1,4 +1,4 @@
-# Welcome to my Portfolio!
+# Welcome to my Portfolio:)
 
 <<<<<<< HEAD
 # You can see it just by clicking
