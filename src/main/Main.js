@@ -8,7 +8,7 @@ import Title from "../common/components/title/Title";
 function Main() {
   return (
     <div id="home" className={style.mainBlock}>
-      <a href="https://www.linkedin.com/resume-builder/urn:li:fsd_memberResume:40167993/" className={style.downloadBut}>
+      <a href="https://drive.google.com/file/d/1NkZrbahKJDbLiXVeJcDCYjbxwk9TvbKN/view?usp=share_link" className={style.downloadBut}>
 				<span>Download CV</span>
 			</a>
       <div className={style.container}>
