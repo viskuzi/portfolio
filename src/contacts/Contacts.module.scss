@@ -99,6 +99,33 @@
             }
           }
         }
+        .sendMessage {
+          position: absolute;
+          content: "";
+          background-color: darkgreen;
+          height: 300px;
+          left: 0;
+          right: 0;
+          background-color: $bgColor;;
+          border: 2px solid;
+          border-radius: 20px;
+          @include flex (column, center, center, nowrap);
+          .sendButton {
+            margin-top: 30px;
+            width: 80px;
+            height: 40px;
+            background-color: #262626;
+            border: 2px solid;
+            border-radius: 20px;
+            color: #fff;
+            font-family: "Jost", sans-serif;
+            font-size: 20px;
+            opacity: 1;
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
       }
     }
   }
