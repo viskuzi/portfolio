@@ -35,7 +35,7 @@ function Projects() {
   * code quality control in Codeclimate
   * working with fs, path modules
   * unit testing in Jest`;
-  const thirdDescription = `Chat - front-end part of a web application, is a simplified analogue of Slack-chat.
+  const thirdDescription = `This is a front-end part of a web application, a simplified analogue of Slack-chat.
   Skills gained:
   * Development on React using React Hooks
   * Using the Redux Toolkit
@@ -49,7 +49,7 @@ function Projects() {
   * bug tracking in Rollbar`;
 
   return (
-    <div id="projects"className={style.projectsBlock}>
+    <div id="projects" className={style.projectsBlock}>
       <div className={style.projectsContainer}>
       <Title title={'Projects'}/>
       <Slide>
