@@ -31,8 +31,8 @@ function Main() {
       </div>
       <div className={style.aboutMe}>
         <Title title={'Story'} />
-        <span className={style.myDescription}>  I have a degree in economics and valuable related experience in financial processes and banking. Currently changing my career to Frontend developer. Open for new opportunities within your company. I have a big passion for technologies and languages learning, feel that I can bring more value to society by realizing some interesting projects and improve people's lives within development.
-          To my best soft skills I can attribute responsibility, creativity, friendliness, empathy. I'm hard working and ready to study new skills and technologies. Will be a strong member of every team)
+        <span className={style.myDescription}>Hello! I'm a Frontend developer. Open for new opportunities within your company. I have a big passion for technologies and languages learning, feel that I can bring more value to society by realizing some interesting projects and improve people's lives within development.
+          To my best soft skills I can attribute responsibility, creativity, friendliness, empathy. I'm hard working and ready permanently improve myself like person and specialist. Will be a strong member of every team)
           Took part in the international student exchange program "Work and travel" in the USA.</span>
       </div>
     </div>  

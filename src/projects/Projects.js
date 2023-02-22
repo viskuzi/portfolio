@@ -20,6 +20,34 @@ function Projects() {
     backgroundImage: `url(${chatImg})`,
   };
 
+  const firstDescription = `A set of five math games for the console on Node.js.
+  Skills gained:
+    * setting up the environment: Node.js, npm, Prettier, Eslint
+    * working with Git / GitHub, CI (GitHub Actions)
+    * mastering VSCode
+    * working with the readline module
+    * using the lodash library`;
+  const secondDescription = `Difference calculator - command line utility. Defines a diff between JSON/YAML files with a choice of diff output format.
+  Skills gained:
+  * using tree recursion
+  * writing code in a functional style
+  * basics of competent application organization
+  * code quality control in Codeclimate
+  * working with fs, path modules
+  * unit testing in Jest`;
+  const thirdDescription = `Chat - front-end part of a web application, is a simplified analogue of Slack-chat.
+  Skills gained:
+  * Development on React using React Hooks
+  * Using the Redux Toolkit
+  * Deploying on Railway
+  * Layout using React-Bootstrap
+  * Routing organization: React-Router
+  * Interacting with the server via web sockets (Socket.IO)
+  * Working with libraries Formik, React-Toastify, leo-profanity
+  * working with yup, i18next, on-change libraries
+  * dealing with backend by HTTP requests (axios)
+  * bug tracking in Rollbar`;
+
   return (
     <div id="projects"className={style.projectsBlock}>
       <div className={style.projectsContainer}>
@@ -28,19 +56,19 @@ function Projects() {
         <div className={style.itemsBlock}>
           <Project 
             title={'Brain Games'} 
-            description={'beautiful description about me perfect skills in programming'} 
+            description={firstDescription} 
             style={brainGames}
             link={"https://github.com/viskuzi/frontend-project-lvl1"}
           />
           <Project 
             title={'Difference Calculator'} 
-            description={'beautiful description about me perfect skills in programming'}
+            description={secondDescription}
             style={diffCalc}
             link={"https://github.com/viskuzi/frontend-project-lvl2"}
           />
           <Project 
-            title={'Online Chat(in progress)'} 
-            description={'beautiful description about me perfect skills in programming'} 
+            title={'Online Chat'} 
+            description={thirdDescription} 
             style={chat}
             link={"https://github.com/viskuzi/js-react-developer-project-12"}
           />
