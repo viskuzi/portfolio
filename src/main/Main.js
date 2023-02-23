@@ -8,7 +8,7 @@ import Title from "../common/components/title/Title";
 function Main() {
   return (
     <div id="home" className={style.mainBlock}>
-      <a href="https://drive.google.com/file/d/1QvHADRY8_ryQzIVLJTXVqcimHwhmFRzW/view?usp=share_link" className={style.downloadBut}>
+      <a href="https://drive.google.com/file/d/1In2el-Pt8NMKcZ33msX67v4LiyXgzj1B/view?usp=share_link" className={style.downloadBut}>
 				<span>Download CV</span>
 			</a>
       <div className={style.container}>
